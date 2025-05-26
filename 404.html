@@ -10,6 +10,51 @@
       padding: 0;
       box-sizing: border-box;
     }
+ #menu-icon {
+  font-size: 3.6rem;
+  color: cyan;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: color 0.3s;
+}
+
+#menu-icon:hover {
+  color: #fff;
+}
+    @media (max-width: 991px){
+  .header{
+    padding: 2rem 3%;
+  }
+    }
+    @media (max-width: 768px){
+   #menu-icon{
+    display: block;
+   }
+
+   .nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: #1c1e26;
+    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+   }
+   .nav.active{
+    display: block;
+   }
+   .nav a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+   }
+    }
 
     body {
       font-family: Arial, sans-serif;
@@ -118,22 +163,37 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <div class="icon"></div>
-      EMMYloRd
-    </div>
+     <header>
+   <div class="logo">
+    <div class="icon"></div>
+  EMMYloRd
+  </div>
 
-    <nav class="nav">
-      <a href="#home" class="active">Home</a>
-      <a href="#about-me">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+  <nav class="nav">
+  <a href="#home" class="active">Home</a>
+  <a href="#about-me">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Project</a>
+  <a href="#contact">Contact</a>
+  </nav>
   </header>
 
   <h2>404 - Hi 👋 Sorry, We Can’t Find That Page!</h2>
   <p>Oops! The page you are looking for does not exist. It might have been moved or deleted.</p>
   <button><a href="index.html">Back to Home</a></button>
+    <script>
+  let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.nav');
+
+menuIcon.onclick = () => {
+  menuIcon . classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+}
+
+let sections = document.querySelectorAll("section");
+let navlinks = document.querySelectorAll("header nav a");
+    </script>
 </body>
 </html>
