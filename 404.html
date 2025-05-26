@@ -9,13 +9,64 @@
       font-family: Arial, sans-serif;
       background-color: #fff;
       color: #7cf03d;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       height: 100vh;
-      flex-direction: column;
       text-align: center;
     }
+    a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: #1f242d;
+  padding: 2rem 9%;
+  animation-delay: 1.2s;
+  animation: show-content 1.5s ease forwards;
+}
+    .nav a{
+  font-size: 1.7rem;
+  color: white;
+  margin-left: 2rem;
+}
+    button{
+      
+    color: #333;
+    background-color: #eee;
+    }
+.nav a:hover,
+.nav a.active{
+  color: cyan;
+}
+
+.nav a {
+  animation: slid-top 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes slid-top {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.nav{
+  margin-right: 2rem;
+}
       .logo {
     display: flex;
     align-items: center;
@@ -46,25 +97,49 @@
     font-size: 24px;
     font-weight: bold;
   }
-    h1{
-      color: black;
+    h2{
+     font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 4rem;
     }
     p{
-      color: yellow;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
     }
     a {
-      color: red;
+      color: black;
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
+    <header>
    <div class="logo">
     <div class="icon"></div>
   EMMYloRd
   </div>
-  <h1>404 -  Page Not Found! </h1>
-  <p>Sorry, the page you’re looking for doesn't exist.</p>
-  <a href="index.html">Back to Home</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+  <nav class="nav">
+  <a href="#home" class="active">Home</a>
+  <a href="#about-me">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Project</a>
+  <a href="#contact">Contact</a>
+  </nav>
+    </header>
+   <div class="logo">
+    <div class="icon"></div>
+  EMMYloRd
+  </div>
+
+  <h2>404-Hi 👋  Sorry We Can’t Find That Page!</h2>
+  <p>Oops! The page you are looking for does not exist. It might have been moved or deleted.</p>
+ <button> <a href="index.html">Back to Home</a></button>
 </body>
 </html>
