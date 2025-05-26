@@ -80,11 +80,4 @@ const typed = new Typed('.multiple-text',{
       messageResponse.style.display = "block";
     }
   });
-  document.getElementById('signupForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // prevent default submission (no backend)
-
-    // You can add form validation or storage here if needed
-
-    // Redirect after "submission"
-    window.location.href = 'index.html'; // change to your portfolio page URL
-  });
+ 
