@@ -161,19 +161,18 @@
     <h2 class="tittle heading">Contact <span>Me!</span></h2>
     <form id="contactForm"   action="https://formspree.io/f/xanozvbe" method="POST">
       <div class="input-box">
+        <label for="fullName">Full Name</label>
         <input type="text" placeholder="Full name" required>
+        <label for="email">Email</label>
         <input type="email" placeholder="Enter your email" required>
-      </div>
-      <div class="input-box">
-       
+       <label for="tel">Phone Number</label>
         <input
       type="tel"
       id="phone"
       name="phone"
       placeholder="123-456-7890"
       maxlength="12"
-      required
-  >
+      required>
         <input type="text" placeholder="Enter Subject" required>
       </div>
       <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
@@ -183,6 +182,7 @@
       <input type="submit" value="Send Message" class="btn">
     </form>
   </section>
+    </div>
 
   <footer class="footer">
     <div class="container">
@@ -240,10 +240,10 @@
           </div>
         </div>
       </div>
+    </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="index.js"></script>
-    </div>
 </body>
 </html>
