@@ -159,7 +159,9 @@
 
   <section class="contact" id="contact">
     <h2 class="tittle heading">Contact <span>Me!</span></h2>
-    <form id="contactForm"   action="https://formspree.io/f/xanozvbe" method="POST">
+    <form action="https://formsubmit.co/el/diyenu" method="POST">
+  <!-- Replace with your real email -->
+  <input type="hidden" name="_autoresponse" value="Thanks for contacting us! We'll get back to you soon.">
       <div class="input-box">
         <input type="text" placeholder="Full name" required>
         <input type="email" placeholder="Enter your email" required>
@@ -176,6 +178,15 @@
       <p id="messageResponse" class="response-message">
         Message sent successfully!
       </p>
+             <!-- Prevent spam -->
+      <input type="text" name="_honey" style="display:none">
+      
+      <!-- Redirect after submit -->
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+      
+      <!-- Turn off CAPTCHA -->
+      <input type="hidden" name="_captcha" value="false">
+
       <input type="submit" value="Send Message" class="btn">
     </form>
   </section>
