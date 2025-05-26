@@ -8,7 +8,7 @@
 }
 body{
   color: white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -424,6 +424,7 @@ section{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: #fff;
   gap: 2rem;
 }
 
@@ -574,7 +575,7 @@ html {
 .projects {
   padding: 5rem 2rem;
   background-color: #282836;
-  color: #ddd;
+  color: #fff;
   text-align: center;
 }
 
@@ -850,6 +851,10 @@ ul {
 @media (max-width: 1200px){
   html{
     font-size: 55%;}
+
+body{
+overflow-x: hidden;
+}
 }
 @media (max-width: 991px){
   .header{
@@ -866,6 +871,9 @@ ul {
   }
   .footer{
     padding: 2rem 3%;
+  }
+  body{
+    overflow-x: hidden;
   }
 }
 @media (max-width: 768px){
@@ -929,6 +937,9 @@ ul {
   .project-grid{
     grid-template-columns: 1fr;
   }
+  body{
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 450px) {
   html{
@@ -937,6 +948,9 @@ ul {
 
   .contact form .input-box input{
     width: 100%;
+  }
+  body{
+    overflow-x: hidden;
   }
 }
 @media (max-width: 365px){
@@ -955,5 +969,8 @@ ul {
   .footer-bottom p{
     text-align: center;
     margin-top: 2rem;
+  }
+  body{
+    overflow-x: hidden;
   }
 }
