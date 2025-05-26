@@ -6,8 +6,14 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html, body {
+  overflow-x: hidden;
+}
 body{
   color: white;
+  overflow-x: hidden;
+}
+.site-wrapper {
   overflow-x: hidden;
 }
 
