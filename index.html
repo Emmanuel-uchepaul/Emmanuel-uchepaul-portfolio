@@ -160,34 +160,24 @@
   <section class="contact" id="contact">
     <h2 class="tittle heading">Contact <span>Me!</span></h2>
     <form action="https://formsubmit.co/el/diyenu" method="POST">
-  <!-- Replace with your real email -->
+  <!-- ✅ Auto-reply message -->
   <input type="hidden" name="_autoresponse" value="Thanks for contacting us! We'll get back to you soon.">
-      <div class="input-box">
-        <input type="text" placeholder="Full name" required>
-        <input type="email" placeholder="Enter your email" required>
-        <input
-      type="tel"
-      id="phone"
-      name="phone"
-      placeholder="123-456-7890"
-      maxlength="12"
-      required>
-        <input type="text" placeholder="Enter Subject" required>
-      </div>
-      <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-      <p id="messageResponse" class="response-message">
-        Message sent successfully!
-      </p>
-             <!-- Prevent spam -->
-      <input type="text" name="_honey" style="display:none">
-      
-      <!-- Redirect after submit -->
-      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
-      
-      <!-- Turn off CAPTCHA -->
-      <input type="hidden" name="_captcha" value="false">
 
-      <input type="submit" value="Send Message" class="btn">
+  <!-- ✅ Spam protection and options -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio//thank-you.html">
+  <input type="text" name="_honey" style="display:none">
+
+  <div class="input-box">
+    <input type="text" name="name" placeholder="Full name" required>
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <input type="tel" name="phone" placeholder="123-456-7890" maxlength="12" required>
+    <input type="text" name="subject" placeholder="Enter Subject" required>
+  </div>
+
+  <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+  <input type="submit" value="Send Message" class="btn">
     </form>
   </section>
     </div>
