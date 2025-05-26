@@ -941,6 +941,7 @@ ul {
   }
 }
 @media (max-width: 365px){
+  
   .home-img img{
     width: 90vw;
     margin-top: 2rem;
@@ -956,16 +957,4 @@ ul {
     text-align: center;
     margin-top: 2rem;
   }
-}
-.signup-btn{
-  color: #999;
-  background-color: cyan;
-  border-radius: 5px;
-  padding: 15px 10px;
-}
-.signup-btn:hover{
-  background-color: transparent;
-  color: white;
-  border: 1px solid cyan;
-  margin-right: 2rem;
 }
