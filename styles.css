@@ -116,7 +116,6 @@ header.sticky {
   align-items: center;
   
 }
-
 .home-info h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -124,34 +123,36 @@ header.sticky {
 }
 
 .home-info h2 {
-  display: block;
+  display: inline-block;
   font-size: 32px;
   margin-top: -10px;
-  position: relative;
-  height: 40px; /* controls vertical height of the animation block */
-  overflow: hidden;
 }
 
 .home-info h2 span {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 0.7px #7cf03d;
+  animation: display-text 16s linear infinite;
+  animation-delay: calc(-4s * var(--i));
+}
+
+@keyframes display-text {
+  25%, 100% {
+    display: none;
+  }
+}
+
+.home-info h2 span::before {
+  content: attr(data-text);
   position: absolute;
-  opacity: 0;
+  width: 0;
+  border-right: 2px solid #7cf03d;
   color: #7cf03d;
-  animation: textCycle 8s linear infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: fill-text 4s linear infinite;
 }
-
-.home-info h2 span:nth-child(1) {
-  animation-delay: 0s;
-}
-.home-info h2 span:nth-child(2) {
-  animation-delay: 2s;
-}
-.home-info h2 span:nth-child(3) {
-  animation-delay: 4s;
-}
-.home-info h2 span:nth-child(4) {
-  animation-delay: 6s;
-}
-
 section{
   min-height: 100vh;
   padding: 10rem 9% 2rem;
@@ -164,7 +165,6 @@ section{
     width: 100%;
   }
 }
-
 .home-info p {
   font-size: 1.5rem;
   font-weight: 200;
