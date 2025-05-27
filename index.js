@@ -81,3 +81,12 @@ const typed = new Typed('.multiple-text',{
     }
   });
  
+document.querySelector('form').addEventListener('submit', function (e) {
+     const btn = document.querySelector('form .btn');
+     btn.disabled = true;
+     btn.value = 'Sending...';
+     setTimeout(() => {
+       btn.disabled = false;
+       btn.value = 'Send Message';
+     }, 5000); // Reset after 3 seconds (adjust based on redirect time)
+   });
