@@ -97,7 +97,7 @@ document.getElementById("logo").addEventListener(
   } 
 );
 
-document.getElementById("logoIcon").addEventListener(
+document.getElementById("logoicon").addEventListener(
   "click", () => {
   window.location.reload();
   } 
