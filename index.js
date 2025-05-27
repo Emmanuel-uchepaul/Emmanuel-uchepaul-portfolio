@@ -90,3 +90,15 @@ document.querySelector('form').addEventListener('submit', function (e) {
        btn.value = 'Send Message';
      }, 5000); // Reset after 3 seconds (adjust based on redirect time)
    });
+
+document.getElementById("logo").addEventListener(
+  "click", () => {
+  window.location.reload();
+  } 
+);
+
+document.getElementById("logoIcon").addEventListener(
+  "click", () => {
+  window.location.reload();
+  } 
+);
