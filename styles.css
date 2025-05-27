@@ -980,3 +980,111 @@ overflow-x: hidden;
     overflow-x: hidden;
   }
 }
+
+@media (max-width: 400px) {
+  html {
+    font-size: 45%; /* Slightly smaller base font for compact screens */
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 1.5rem 2%; /* Reduce padding for smaller screen */
+  }
+
+  .logo {
+    font-size: 24px; /* Adjust logo font size */
+  }
+
+  .logo .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo .icon::before {
+    font-size: 18px; /* Smaller icon text */
+  }
+
+  #menu-icon {
+    font-size: 3rem; /* Slightly smaller menu icon */
+  }
+
+  .nav a {
+    font-size: 1.8rem; /* Adjust nav link size */
+    margin: 2rem 0;
+  }
+
+  .home {
+    padding: 8rem 2% 2rem; /* Reduce top padding */
+  }
+
+  .home-info h1 {
+    font-size: 4rem; /* Smaller heading for Vivo Y35A */
+  }
+
+  .home-info h3 {
+    font-size: 2rem;
+  }
+
+  .home-img .img-box {
+    max-width: 85vw; /* Ensure image fits narrow screen */
+    height: auto;
+  }
+
+  .about-me {
+    padding: 8rem 2% 2rem;
+  }
+
+  .about-me .img-box {
+    max-width: 85vw;
+  }
+
+  .skills-container {
+    gap: 1.5rem; /* Smaller gap for cards */
+  }
+
+  .skills-card {
+    padding: 2rem 1.5rem; /* Reduce padding */
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+
+  .project-card {
+    height: 300px; /* Slightly shorter cards */
+  }
+
+  .contact form .input-box input {
+    width: 100%; /* Full-width inputs */
+    padding: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .contact form textarea {
+    font-size: 1.4rem;
+  }
+
+  .contact form .btn {
+    padding: 8px 20px; /* Smaller button */
+    font-size: 1.4rem;
+  }
+
+  .footer-col {
+    min-width: 200px; /* Adjust footer columns */
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 10px;
+  }
+
+  .footer-iconTop {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
