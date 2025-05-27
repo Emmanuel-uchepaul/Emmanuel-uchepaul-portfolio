@@ -983,7 +983,7 @@ overflow-x: hidden;
 
 @media (max-width: 400px) {
   html {
-    font-size: 45%; /* Slightly smaller base font for compact screens */
+    font-size: 45%; /* Smaller base font for compact screen */
   }
 
   body {
@@ -991,100 +991,91 @@ overflow-x: hidden;
   }
 
   header {
-    padding: 1.5rem 2%; /* Reduce padding for smaller screen */
+    padding: 1rem 2%;
   }
 
   .logo {
-    font-size: 24px; /* Adjust logo font size */
+    font-size: 20px;
   }
 
   .logo .icon {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 
   .logo .icon::before {
-    font-size: 18px; /* Smaller icon text */
+    font-size: 16px;
   }
 
   #menu-icon {
-    font-size: 3rem; /* Slightly smaller menu icon */
+    font-size: 2.8rem;
   }
 
   .nav a {
-    font-size: 1.8rem; /* Adjust nav link size */
-    margin: 2rem 0;
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
   }
 
   .home {
-    padding: 8rem 2% 2rem; /* Reduce top padding */
+    flex-direction: column;
+    padding: 6rem 2% 2rem;
+    align-items: center;
+    text-align: center;
   }
 
   .home-info h1 {
-    font-size: 4rem; /* Smaller heading for Vivo Y35A */
+    font-size: 3rem;
+    line-height: 1.2;
   }
 
   .home-info h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .home-info h2 {
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
+
+  .home-info h2 span {
+    font-size: 1.6rem;
+    -webkit-text-stroke: 0.5px #7cf03d;
+  }
+
+  .home-info p {
+    font-size: 1.2rem;
+    max-width: 90vw;
+    margin: 1rem 0;
   }
 
   .home-img .img-box {
-    max-width: 85vw; /* Ensure image fits narrow screen */
+    width: 80vw;
     height: auto;
+    max-height: 80vw;
+    margin-top: 2rem;
   }
 
-  .about-me {
-    padding: 8rem 2% 2rem;
+  .home-img .img-box::before,
+  .home-img .img-box::after {
+    display: none; /* Disable animations on small screens to avoid overlap */
   }
 
-  .about-me .img-box {
-    max-width: 85vw;
+  .home-img .img-box .img-item img {
+    object-fit: contain; /* Prevent distortion */
+    max-width: 100%;
+    max-height: 100%;
   }
 
-  .skills-container {
-    gap: 1.5rem; /* Smaller gap for cards */
+  .btn {
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    box-shadow: 0 0 5px cyan; /* Reduce glow effect */
+    margin-bottom: 1rem;
   }
 
-  .skills-card {
-    padding: 2rem 1.5rem; /* Reduce padding */
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr; /* Single column for small screens */
-  }
-
-  .project-card {
-    height: 300px; /* Slightly shorter cards */
-  }
-
-  .contact form .input-box input {
-    width: 100%; /* Full-width inputs */
-    padding: 1.2rem;
-    font-size: 1.4rem;
-  }
-
-  .contact form textarea {
-    font-size: 1.4rem;
-  }
-
-  .contact form .btn {
-    padding: 8px 20px; /* Smaller button */
-    font-size: 1.4rem;
-  }
-
-  .footer-col {
-    min-width: 200px; /* Adjust footer columns */
-  }
-
-  .footer-bottom-content {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0 10px;
-  }
-
-  .footer-iconTop {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
+  .social-media a {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin: 0.5rem;
   }
 }
