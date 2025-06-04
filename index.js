@@ -91,12 +91,4 @@ document.querySelector('form').addEventListener('submit', function (e) {
      }, 5000); // Reset after 3 seconds (adjust based on redirect time)
    });
 
-["logo", "logoicon"].forEach(id => {
-  const element = document.getElementById(id);
-  if (element) {
-    element.addEventListener("click", () => {
-      window.location.reload();
-    });
-  }
-});
 
