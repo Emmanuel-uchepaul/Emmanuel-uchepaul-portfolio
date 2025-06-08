@@ -6,21 +6,4 @@
     <priority>1.00</priority>
   </url>
 
-  <url>
-    <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/about.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/projects.html</loc>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/contact.html</loc>
-    <priority>0.80</priority>
-  </url>
-
 </urlset>
-
-
