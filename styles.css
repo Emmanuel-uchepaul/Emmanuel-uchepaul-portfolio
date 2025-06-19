@@ -144,6 +144,11 @@ header.sticky {
   animation: display-text 16s linear infinite;
   animation-delay: calc(-4s * var(--i));
 }
+@supports (-webkit-text-stroke: 1px #000) {
+  .home-info h2 span{
+     color: transparent;
+  -webkit-text-stroke: 0.7px #7cf03d;
+}
 
 @keyframes display-text {
   25%, 100% {
