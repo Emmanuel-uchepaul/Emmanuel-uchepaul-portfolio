@@ -52,31 +52,10 @@ const typed = new Typed('.multiple-text',{
   backDelay: 1000,
   loop: true
 });
-   const form = document.getElementById("contactForm");
-  const messageResponse = document.getElementById("messageResponse");
+ const form = document.querySelector("form");
+  const btn = form.querySelector(".btn");
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-          setTimeout(() => {
-      message.style.display = 'none';
-    }, 4000);
-
-    const response = await fetch(form.action, {
-      method: "POST",
-      body: formData,
-      headers: {
-        Accept: "application/json",
-      },
-    });
-
-    if (response.ok) {
-      messageResponse.style.display = "block";
-      form.reset();
-    } else {
-      messageResponse.textContent = "Oops! Something went wrong.";
-      messageResponse.style.color = "red";
-      messageResponse.style.display = "block";
-    }
+  form.addEventListener("submit", function () {
+    btn.disabled = true;
+    btn.value = "Sending...";
   });
