@@ -52,7 +52,7 @@ const typed = new Typed('.multiple-text',{
   backDelay: 1000,
   loop: true
 });
-  const form = document.getElementById("contactForm");
+   const form = document.getElementById("contactForm");
   const messageResponse = document.getElementById("messageResponse");
 
   form.addEventListener("submit", async (e) => {
@@ -80,15 +80,3 @@ const typed = new Typed('.multiple-text',{
       messageResponse.style.display = "block";
     }
   });
- 
-document.querySelector('form').addEventListener('submit', function (e) {
-     const btn = document.querySelector('form .btn');
-     btn.disabled = true;
-     btn.value = 'Sending...';
-     setTimeout(() => {
-       btn.disabled = false;
-       btn.value = 'Send Message';
-     }, 5000); // Reset after 3 seconds (adjust based on redirect time)
-   });
-
-
