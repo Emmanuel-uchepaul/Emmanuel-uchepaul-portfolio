@@ -130,7 +130,7 @@ header.sticky {
   top: 100%;
   left: 0;
   z-index: 999;
-  width: 50px;
+  width: 200px;
 }
 
 .menu-wrapper:hover .submenu {
