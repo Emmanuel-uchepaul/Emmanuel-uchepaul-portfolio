@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/</loc>
-    <lastmod>2025-06-19</lastmod>
+    <lastmod>2025-06-26</lastmod>
+    <priority>1.0</priority>
   </url>
-</urlset>
 
+  <url>
+    <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/blog.html</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/iking.html</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/chini-design.html</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Add more blog or project pages as needed -->
+</urlset>
