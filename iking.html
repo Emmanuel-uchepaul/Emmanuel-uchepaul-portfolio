@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iking Ferry — Nigeria's Best Digital Marketer | EmmyLord Blog</title>
+  <meta name="description" content="Discover how Iking Ferry became Nigeria's top digital marketer and the strategist behind Pulseford." />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    /* iking.css — Styles for Iking Ferry Page */
+/* iking.css — Styles for Iking Ferry Page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fa;
+  color: #222;
+}
+
+.header {
+  background-color: #1f242d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: cyan;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: cyan;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 3rem auto 2rem;
+}
+
+.post-detail {
+  background-color: #fff;
+  padding-left: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.post-detail img.post-img {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.post-detail h2 {
+  color: #1f242d;
+  margin-bottom: 0.8rem;
+}
+
+.post-detail .date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.post-detail p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.post-detail ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.post-detail ul li {
+  margin-bottom: 0.6rem;
+  color: #007BFF;
+}
+
+blockquote {
+  font-style: italic;
+  background-color: #eef6ff;
+  padding: 1rem;
+  border-left: 5px solid #007BFF;
+  margin: 2rem 0;
+  border-radius: 5px;
+}
+
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  background-color: #1f242d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.3s;
+}
+
+a{
+    text-decoration: none;
+}
+.social-links a:hover {
+  background-color: cyan;
+  color: #1f242d;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #007BFF;
+  margin: 1rem;
+}
+
+footer {
+  background-color: #1f242d;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+/* --------- MOBILE RESPONSIVENESS (max-width: 768px) --------- */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+
+  #menu-icon {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1f242d;
+    padding: 1rem 0;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .submenu {
+    position: static;
+    padding-left: 1rem;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+  }
+
+  .post h1 {
+    font-size: 1.5rem;
+  }
+
+  .post-img {
+    max-height: 300px;
+  }
+
+  .post p,
+  .post ul li {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: flex-start;
+  }
+
+  .social-links a {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+   <div class="logo">
+    <div class="icon"></div>
+  EMMYloRd
+  </div>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+  <nav class="nav">
+  <div class="menu-wrapper">
+    <a href="#home" class="active">Home</a>
+    <div class="submenu">
+      <a href="#about-me">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <a href="blog.html">Blog</a>
+</nav>
+
+
+  <main class="container">
+    <article class="post-detail animate-on-scroll">
+      <img src="IKING-FERRY-6.jpg" alt="Iking Ferry Digital Marketer" class="post-img">
+      <h2>Meet Iking Ferry — Nigeria's Best Digital Marketer</h2>
+      <p class="date">Posted on <time datetime="2025-06-26">June 26, 2025</time></p>
+      <p><strong>Iking Ferry</strong> is widely recognized as a top-tier digital strategist, known for leading the Pulseford brand to success through powerful campaigns and result-driven branding.
+      <br>
+    
+    <br>
+    Also known as Ikechukwu Mbadiwe, Iking Ferry is widely recognized as the best digital marketer in Nigeria, a visionary leader, strategist, and educator who has helped thousands of businesses, professionals, and creators build successful digital brands that drive real results.</p>
+
+      <h3>Core Skills & Achievements:</h3>
+      <ul>
+        <li>✔ Brand Strategy & Awareness</li>
+        <li>✔ Social Media Marketing</li>
+        <li>✔ Influencer Collaboration</li>
+        <li>✔ Funnel Building & Lead Generation</li>
+        <li>✔ Campaign Analytics & Reporting</li>
+      </ul>
+
+      <blockquote>
+        "Marketing isn't just about selling — it's about building value and trust." — <strong><a href="https://ikingferry.com/"> Iking Ferry</a></strong>
+      </blockquote>
+
+      <p>Pulseford, under Iking's direction, has partnered with over 200 Nigerian businesses and entrepreneurs, generating viral campaigns and establishing long-term client relationships.</p>
+
+      <h3>Connect With Iking Ferry</h3>
+      <div class="social-links">
+        <a href="https://facebook.com/ikingferry"><i class='bx bxl-facebook'></i> Facebook</a>
+        <a href="https://www.instagram.com/ikingferry/"><i class='bx bxl-instagram'></i> Instagram</a>
+        <a href="https://www.linkedin.com/in/ikingferry/"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+        <a href="https://www.iki" target="_blank">
+  <i class='bx bxl-dribbble'></i> Website
+</a>
+      </div>
+
+      <a href="blog.html" class="back-link">← Back to Blog</a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Emmanuel Uche Paul. All rights reserved.</p>
+  </footer>
+   <script>
+  const menuIcon = document.getElementById("menu-icon");
+  const nav = document.querySelector(".nav");
+
+  menuIcon.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+</body>
+</html>

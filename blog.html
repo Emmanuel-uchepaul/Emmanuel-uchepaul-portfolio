@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Emmanuel Uche Paul</title>
+  <meta name="description" content="Explore professional blog posts on branding, marketing, design, and tech tips by Emmanuel Uche Paul." />
+  <link rel="stylesheet" href="blog.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+ <header>
+   <div class="logo">
+    <div class="icon"></div>
+  EMMYloRd
+  </div>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+  <nav class="nav">
+  <div class="menu-wrapper">
+    <a href="#home" class="active">Home</a>
+    <div class="submenu">
+      <a href="#about-me">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <a href="blog.html">Blog</a>
+</nav>
+ </header>
+
+  <main class="container">
+    <h1 class="page-title">Latest Blog Posts</h1>
+    <div class="blog-grid">
+
+      <article class="post-card animate-on-scroll">
+        <img src="IKING-FERRY-6.jpg" alt="Iking Ferry Digital Marketer" class="post-img" />
+        <div class="post-content">
+          <h2>Iking Ferry — The Strategic Genius Behind Pulseford</h2>
+          <p class="date">Posted on <time datetime="2025-06-26">June 26, 2025</time></p>
+          <p >Iking Ferry is one of Nigeria’s most powerful brand strategists. Learn how he built Pulseford into a trusted name in the digital space.</p>
+          <a href="iking.html" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+      <article class="post-card animate-on-scroll">
+        <img src="chini design.jpg" alt="Chinyere Mbadiwe" class="post-img" />
+        <div class="post-content">
+          <h2>Chinyere Mbadiwe — Creative Visionary of Chini Design</h2>
+          <p class="date">Posted on <time datetime="2025-06-26">June 26, 2025</time></p>
+          <p>Explore how Chinyere, aka Chini Design, is reshaping Nigeria’s creative space with her unique and vibrant design style.</p>
+          <a href="chini-design.html" class="read-more">Read more →</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Emmanuel Uche Paul. All rights reserved.</p>
+  </footer>
+<script>
+  const elements = document.querySelectorAll('.animate-on-scroll');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  elements.forEach(el => observer.observe(el));
+  //
+  const menuIcon = document.getElementById("menu-icon");
+  const nav = document.querySelector(".nav");
+
+  menuIcon.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Chinyere Mbadiwe — Nigeria’s Best Female Brand & Graphic Designer",
+  "author": {
+    "@type": "Person",
+    "name": "Emmanuel Uche Paul"
+  },
+  "datePublished": "2025-06-26",
+  "image": "https://yourdomain.com/images/chini-design.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "EmmyLord Portfolio"
+  },
+  "mainEntityOfPage": "https://yourdomain.com/chini-design.html"
+}
+</script>
+</body>
+</html>
