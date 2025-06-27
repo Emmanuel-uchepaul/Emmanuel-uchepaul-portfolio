@@ -1,14 +1,32 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/</loc>
+    <lastmod>2025-06-27</lastmod>
+    <priority>1.00</priority>
   </url>
+
+  <!-- Blog Index Page -->
   <url>
     <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/blog.html</loc>
+    <lastmod>2025-06-27</lastmod>
+    <priority>0.95</priority>
   </url>
+
+  <!-- Iking Ferry Blog Post -->
   <url>
     <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/iking.html</loc>
+    <lastmod>2025-06-27</lastmod>
+    <priority>0.90</priority>
   </url>
+
+  <!-- Chini Design Blog Post -->
   <url>
     <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/chini-design.html</loc>
+    <lastmod>2025-06-27</lastmod>
+    <priority>0.90</priority>
   </url>
+
 </urlset>
