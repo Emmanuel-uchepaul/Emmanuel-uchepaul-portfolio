@@ -1,4 +1,5 @@
-# Emmanuel Uchepaul Portfolio 🌐
+# Emmanuel Uchepaul Portfolio 
+
 
 Welcome to my personal portfolio website! This site showcases my skills, projects, and how to contact me.
 
