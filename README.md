@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This site showcases my skills, projects, and how to contact me.
 
-# 🚀 Features
+#  Features
 
 - Responsive and mobile-friendly design
 - Animated text using Typed.js
@@ -12,7 +12,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 - Contact form powered by Formspree
 - Social media links
 
-# 🛠️ Built With
+#  Built With
 
 - HTML
 - CSS
@@ -20,9 +20,10 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 - Typed.js
 - Formspree (for contact form)
 
-## 📬 Contact
+##  Contact
 
 If you'd like to get in touch, please use the contact form on the website or connect with me via WhatsApp, GitHub, or other social platforms.
 
 
-Thank you for visiting my portfolio! 💻
+Thank you for visiting my portfolio! 
+
