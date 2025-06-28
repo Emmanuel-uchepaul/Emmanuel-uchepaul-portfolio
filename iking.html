@@ -7,7 +7,7 @@
   <meta name="description" content="Iking Ferry is Nigeria's top digital marketing strategist and founder of Pulseford. Discover how he transforms brands with campaigns, funnels, and growth tactics." />
   <meta name="keywords" content="Best digital marketer in Nigeria, Iking Ferry, Pulseford marketing, Nigerian marketing expert, top marketing strategist Nigeria" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <meta name="msvalidate.01" content="794F37E517A27A5C8D68DF4398A48292" />
+  <meta name="msvalidate.01" content="794F37E517A27A5C8D68DF4398A48292" >
 
   <!-- SEO Structured Data -->
   <script type="application/ld+json">
@@ -216,12 +216,52 @@
 }
 
     }
+    #menu-icon {
+  font-size: 3.6rem;
+  color: cyan;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: color 0.3s;
+}
+
+#menu-icon:hover {
+  color: #fff;
+}
+ @media (max-width: 768px){
+   #menu-icon{
+    display: block;
+   }
+
+   .nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: #1c1e26;
+    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+   }
+   .nav.active{
+    display: block;
+   }
+   .nav a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+   }   
   </style>
 </head>
 <body>
 
 <header>
   <div class="logo">EMMYloRd</div>
+  <i class="bx bx-menu" id="menu-icon"></i>
   <nav class="nav">
     <a href="#home" class="active">Home</a>
     <a href="blog.html">Blog</a>
@@ -269,6 +309,16 @@
 <footer>
   <p>&copy; 2025 Emmanuel Uche Paul. All rights reserved.</p>
 </footer>
+<script >
+// Clean toggle script — working perfectly
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.nav');
 
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+};
+
+</script>
 </body>
 </html>
