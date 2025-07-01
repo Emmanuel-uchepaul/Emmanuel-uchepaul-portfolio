@@ -19,16 +19,7 @@
     line-height: 1.6;
   }
 
-  header {
-    background-color: #0d47a1;
-    color: #fff;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
+  
 
   p {
     max-width: 750px;
@@ -219,40 +210,6 @@
   }
 }
 
-/* Small Devices (Mobile landscape to tablets - max 768px) */
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
-
-  p {
-    margin: 1rem 0.5rem;
-  }
-
-  .profile-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 25px;
-  }
-
-  .profile-content p {
-    font-size: 16px;
-  }
-
-  .profile-content h2 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-  }
-}
-
  /* Media Queries for Mobile Devices */
     @media screen and (max-width: 768px) {
       header h1 {
@@ -346,13 +303,51 @@
         font-size: 1.1rem;
       }
     }
+    header {
+      background-color: #1f242d;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    .logo .icon {
+      background: #007BFF;
+      color: white;
+      padding: 0.4rem 0.7rem;
+      border-radius: 50%;
+      margin-right: 0.6rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      color: cyan;
+    }
 </style>
 
 </head>
 <body>
-  <header>
-    <h1>Who Is the Best Digital Marketer in Nigeria? Meet Iking Ferry — The Strategic Genius Behind Pulseford</h1>
-  </header>
+ <header>
+  <div class="logo">EMMYloRd</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="blog.html" class="active">Blog</a>
+  </nav>
+</header>
+
     <div class="container">
         <section class="intro-section" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
   <div style="flex: 1; min-width: 200px;">
