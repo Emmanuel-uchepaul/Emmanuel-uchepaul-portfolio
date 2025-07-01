@@ -185,133 +185,68 @@
     nav a:hover {
       color: cyan;
     }
-   @media screen and (max-width: 768px) {
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #0d47a1;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      margin: 0.5rem;
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      color: #0d47a1;
-      margin-top: 1.5rem;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      color: #1a73e8;
-      margin-top: 1rem;
-      cursor: pointer;
-    }
-
-    li {
-      font-size: 0.9rem;
-      font-family: 'Kanit', sans-serif;
-    }
-
-    ul {
-      margin-left: 1.2rem;
-    }
-
-    .container {
-      padding: 0.5rem;
-      max-width: 100%;
-    }
-
-    .toggle-box {
-      padding: 0.8rem;
-      margin: 0.5rem 0;
-      border-left: 5px solid #030303;
-      border-radius: 5px;
-      color: #000;
-      display: none;
-    }
-
-    .active-toggle .toggle-box {
-      display: block;
+    @media (max-width: 768px)  {
+    section {
+      margin: 1rem 0.5rem;
+      display: flex;
+      justify-content: center;
     }
 
     .profile-card {
-      background: #fff;
-      border: 2px solid #000;
-      padding: 1rem;
-      display: flex;
       flex-direction: column;
       align-items: center;
-      border-radius: 5px;
-      margin: 1rem auto;
       text-align: center;
+      padding: 1rem;
+      border: 2px solid #000;
+      border-radius: 8px;
+      width: 100%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     .profile-card img {
-      width: 70px;
-      height: 70px;
-      object-fit: cover;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
 
     .profile-content h2 {
-      font-size: 1.3rem;
-      margin-top: 0.5rem;
-      color: #000;
-      font-family: 'Kanit', sans-serif;
-      font-weight: 700;
-    }
-
-    .profile-content p {
-      font-size: 0.9rem;
-      color: #000;
-      font-family: 'Kanit', sans-serif;
+      font-size: 1.4rem;
+      margin: 0.5rem 0;
     }
 
     .profile-content a {
-      font-style: italic;
-      color: #777;
-      font-size: 14px;
-      text-decoration: none;
-      display: inline-block;
-      margin: 4px 0 12px;
+      font-size: 0.85rem;
+      color: #1a73e8;
+      margin-bottom: 0.5rem;
+      display: block;
+      word-break: break-word;
+    }
+
+    .profile-content p {
+      font-size: 0.95rem;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
     }
 
     .social-icons a {
-      font-size: 1rem;
+      font-size: 1.2rem;
+      margin: 0 0.5rem;
       color: #0d47a1;
-      margin-right: 0.8rem;
       text-decoration: none;
-      transition: color 0.3s ease;
     }
 
-    .social-icons a:hover {
-      color: rgba(13, 71, 161, .6);
-    }
-
-    footer {
-      font-size: 0.8rem;
-      text-align: center;
-      background: #222;
-      color: #fff;
-      padding: 0.5rem;
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #0d47a1;
+      text-decoration: none;
     }
   }
 </style>
@@ -727,6 +662,7 @@
   <a href="https://x.com/ikingferry" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
      </div>
     </div>
+    <a href="blog.html" class="back-link">← Back to Blog</a>
   </div>
   </section>
   <footer>
