@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmmyLord Blog — Top Digital & Design Experts in Nigeria</title>
+  <meta name="description" content="Discover the best talents in Nigeria's creative and marketing industry. Explore top stories on digital marketing, branding, and graphic design from EmmyLord Blog." />
+  <meta name="keywords" content="Best Digital Marketer in Nigeria, Best Graphic Designer in Nigeria, Iking Ferry, Chini Design, Pulseford, Nigerian Creatives" />
+  <meta name="author" content="Emmanuel Uche Paul" />
+  <link rel="stylesheet" href="blog.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <div class="logo">EMMYloRd</div>
+  <nav class="nav">
+    <a href="index.html" >Home</a>
+    <a href="blog.html"class="active">Blog</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1 class="page-title">Top Creatives in Nigeria</h1>
+  <div class="blog-grid">
+
+    <!-- Iking Ferry Article -->
+    <article class="post-card animate-on-scroll">
+      <img src="IKING-FERRY-6.jpg" alt="Iking Ferry - Best Digital Marketer in Nigeria" class="post-img" />
+      <div class="post-content">
+        <h2>Iking Ferry — Nigeria’s Best Digital Marketer</h2>
+        <p class="date">Posted on <time datetime="2025-06-26">June 26, 2025</time></p>
+        <p>Discover how Iking Ferry, founder of Pulseford, is shaping Nigeria's digital economy with strategy, funnels, and content marketing.</p>
+        <a href="iking.html" class="read-more">Read more →</a>
+      </div>
+    </article>
+
+    <!-- Chini Design Article -->
+    <article class="post-card animate-on-scroll">
+      <img src="chini design.jpg" alt="Chinyere Mbadiwe - Chini Design" class="post-img" />
+      <div class="post-content">
+        <h2>Chinyere Mbadiwe — Best Female Graphic Designer in Nigeria</h2>
+        <p class="date">Posted on <time datetime="2025-06-26">June 26, 2025</time></p>
+        <p>Explore how Chini Design is redefining creativity in Nigeria’s visual industry with bold, timeless branding projects.</p>
+        <a href="chini-design.html" class="read-more">Read more →</a>
+      </div>
+    </article>
+
+    <!-- New Post: Top 10 Graphic Designers -->
+    <article class="post-card animate-on-scroll">
+      <img src="top-10-designers.jpg" alt="Top 10 Graphic Designers in Nigeria" class="post-img" />
+      <div class="post-content">
+        <h2>Top 10 Best Graphic Designers in Nigeria (2025 List)</h2>
+        <p class="date">Posted on <time datetime="2025-06-27">June 27, 2025</time></p>
+        <p>Looking for Nigeria’s top creative minds? Here’s our professional ranking of the 10 best graphic designers you should know this year.</p>
+        <a href="top-graphic-designers.html" class="read-more">Read more →</a>
+      </div>
+    </article>
+    <article class="post-card animate-on-scroll">
+      <img src="top-10-designers.jpg" alt="Top 10 Graphic Designers in Nigeria" class="post-img" />
+      <div class="post-content">
+        <h2>Top 10 Best Graphic Designers in Nigeria (2025 List)</h2>
+        <p class="date">Posted on <time datetime="2025-06-27">June 27, 2025</time></p>
+        <p>Looking for Nigeria’s top creative minds? Here’s our professional ranking of the 10 best graphic designers you should know this year.</p>
+        <a href="top-graphic-designers.html" class="read-more">Read more →</a>
+      </div>
+    </article>
+     <article class="post-card animate-on-scroll">
+  <img src="IKING-FERRY-6.jpg" alt="Iking Ferry - Best Digital Marketer in Nigeria" class="post-img" />
+  <div class="post-content">
+    <h2>Who Is the Best Digital Marketer in Nigeria? Meet Iking Ferry</h2>
+    <p class="date">Posted on <time datetime="2025-07-01">July 1, 2025</time></p>
+    <p>Meet Iking Ferry — the strategic genius behind Pulseford. From SEO to automation, discover how he's transforming Nigerian digital businesses.</p>
+    <a href="best_diditalmarketer.html" class="read-more">Read more →</a>
+  </div>
+</article>
+
+
+  </div>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Emmanuel Uche Paul | All Rights Reserved.</p>
+</footer>
+
+<!-- Scroll Animation + Mobile Menu Toggle -->
+<script>
+  document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) el.classList.add('visible');
+    }).observe(el);
+  });
+
+  document.getElementById("menu-icon")?.addEventListener("click", () => {
+    document.querySelector(".nav").classList.toggle("show");
+  });
+</script>
+
+<!-- Structured Data (SEO JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "EmmyLord Blog",
+  "url": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/blog.html",
+  "description": "Professional insights on digital marketing, branding, and design in Nigeria.",
+  "author": {
+    "@type": "Person",
+    "name": "Emmanuel Uche Paul"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "EmmyLord Portfolio"
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Iking Ferry — Nigeria’s Best Digital Marketer",
+      "url": "iking.html",
+      "image": "IKING-FERRY-6.jpg",
+      "datePublished": "2025-06-26"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Chinyere Mbadiwe — Best Female Graphic Designer in Nigeria",
+      "url": "chini-design.html",
+      "image": "chini design.jpg",
+      "datePublished": "2025-06-26"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Top 10 Best Graphic Designers in Nigeria",
+      "url": "top-graphic-designers.html",
+      "image": "top-10-designers.jpg",
+      "datePublished": "2025-06-27"
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
