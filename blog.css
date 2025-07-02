@@ -28,57 +28,35 @@ a:hover {
 }
 
 /* Header */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #1f242d;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 9%;
-  z-index: 100;
-}
+  header {
+      background-color: #1f242d;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #007bff;
-}
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: cyan;
+    }
 
-.logo .icon {
-  width: 40px;
-  height: 40px;
-  background: #007bff;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  margin-right: 10px;
-}
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 1rem;
+    }
 
-/* Navigation */
-.nav {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-.nav a {
-  color: white;
-  font-size: 1.1rem;
-}
-
-.nav a.active,
-.nav a:hover {
-  color: cyan;
-}
+    .nav a.active,
+    .nav a:hover {
+      color: cyan;
+    }
 
 .menu-wrapper {
   position: relative;
