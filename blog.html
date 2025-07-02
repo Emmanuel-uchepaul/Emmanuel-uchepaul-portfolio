@@ -83,10 +83,13 @@
       if (entry.isIntersecting) el.classList.add('visible');
     }).observe(el);
   });
+  let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.nav');
 
-  document.getElementById("menu-icon")?.addEventListener("click", () => {
-    document.querySelector(".nav").classList.toggle("show");
-  });
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+};
 </script>
 
 <!-- Structured Data (SEO JSON-LD) -->
@@ -130,6 +133,5 @@
   ]
 }
 </script>
-
 </body>
 </html>
