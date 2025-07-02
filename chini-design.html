@@ -242,6 +242,15 @@
 <footer>
   <p>&copy; 2025 Emmanuel Uche Paul. All rights reserved.</p>
 </footer>
+  <script >
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.nav');
+
+menuIcon.onclick = () => {
+menuIcon.classList.toggle('bx-x');
+navbar.classList.toggle('active');
+};
+  </script>
 
 </body>
 </html>
