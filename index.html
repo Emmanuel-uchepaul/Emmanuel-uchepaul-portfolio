@@ -24,10 +24,13 @@
   <meta name="google-site-verification" content="ejpSeKe_5dkJxot_tV6AHrK9rUl2j6jO6RXX8xnuWBU" />
 <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="boxicons.min.css" media="print" onload="this.onload=null;this.media='all';">
   <link rel="stylesheet" href="styles.css">
   <meta name="robots" content="index, follow">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
    <meta name="google-site-verification" content="rAvseJeQ4vqoKP34iF35pcKtLgm2b53Knu4P5532EQo">
 </head>
 <body>
@@ -101,7 +104,10 @@
     <div class="home-img">
       <div class="img-box">
         <div class="img-item">
-          <img src="favicon-removebg-preview.png" alt="Emmylord">
+         <picture>
+      <source srcset="favicon-removebg-preview.webp" type="image/webp">
+      <img src="favicon-removebg-preview.png" alt="Emmylord" loading="lazy">
+    </picture>
         </div>
       </div>
     </div>
@@ -114,7 +120,7 @@
         <br>
         I love learning new technologies and improving my skills. I'm always looking for new challenges and opportunities to grow.
       </p>
-      <a href="#projects" class="btn">Read More</a>
+      <a href="#contact" class="btn" aria-label="Get in touch ">Hire Me</a>
     </div>
   </section>
 
@@ -152,7 +158,7 @@
     <h2 class="heading">Latest <span>Projects</span></h2>
     <div class="project-grid">
       <div class="project-card">
-        <img src="calculator-project-2.png" alt="Calculator App">
+        <img src="calculator-project-2.png" alt="Calculator Projects" loading="lazy">
         <div class="project-info">
           <h4>Project 1</h4>
           <h2>Calculator App</h2>
@@ -161,7 +167,7 @@
         </div>
       </div>
       <div class="project-card">
-        <img src="roc-papaer-project.png" alt="RockPaperScissorsGame">
+        <img src="roc-papaer-project.png" alt="RockPaperScissors Project" loading="lazy">
         <div class="project-info">
           <h4>Project 2</h4>
           <h2>✊ Rock Paper Scissors Game</h2>
@@ -170,7 +176,7 @@
         </div>
       </div>
       <div class="project-card">
-        <img src="todo-project.png" alt="To-Do List App">
+        <img src="todo-project.png" alt="To-Do List Project" loading="lazy">
         <div class="project-info">
           <h4>Project 3</h4>
           <h2>To-Do List App</h2>
@@ -181,7 +187,7 @@
     </div>
   </section>
 
-  <section class="contact" id="contactForm">
+  <section class="contact" id="contactForm contact">
     <h2 class="tittle heading">Contact <span>Me!</span></h2>
   <form action="https://formsubmit.co/emmylord329@gmail.com
   " method="POST">
