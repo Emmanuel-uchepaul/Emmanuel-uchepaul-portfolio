@@ -239,21 +239,19 @@ section{
 .btn {
   display: inline-block;
   padding: 10px 30px;
-  background-color: cyan;
+  background-color: #00bfff;
   border: none;
   border-radius: 40px;
   /*box-shadow: 0 0 10px cyan;*/
   font-size: 16px;
   font-weight: 500;
-  color: #fff;
+  color: #1f242d;
   transition: 0.5s;
   margin-bottom: 2rem;
 }
 
 .btn:hover {
-  background-color: transparent;
-  color: #7cf03d;
-  box-shadow: none;
+  background-color: #009acd;
 }
 
 .home-info .btn-sci .sci {
@@ -485,7 +483,7 @@ section{
 
 .skills-card:hover {
   transform: translateY(-20px);
-  border: 0.2rem solid cyan;
+  border: 0.2rem solid #2e3a4c;
   box-shadow: 0 1rem 1rem rgba(119, 223, 255, 0.7);
 }
 
@@ -527,8 +525,8 @@ section{
 }
 
 .skills-btn {
-  background-color: cyan;
-  color: #fff;
+  background-color: #2ecc71;
+  color: #1f242d;
   text-decoration: none;
   padding: 10px 20px;
   font-size: 14px;
@@ -540,8 +538,8 @@ section{
 }
 
 .skills-btn:hover {
-  background-color: transparent;
-  color: cyan;
+  background-color: #27ae60;
+ 
 }
 
 html {
