@@ -240,7 +240,7 @@ section{
   display: inline-block;
   padding: 10px 30px;
   background-color: cyan;
-  border: 2px solid #7cf03d;
+  border: none;
   border-radius: 40px;
   /*box-shadow: 0 0 10px cyan;*/
   font-size: 16px;
@@ -273,7 +273,7 @@ section{
 }
 
 .home-info .btn-sci .sci a:hover {
-  background-color: #7cf03d;
+  background-color: cyan ;
   color: #fff;
   box-shadow: 0 0 10px #7cf03d;
 }
