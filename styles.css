@@ -367,7 +367,7 @@ section{
   max-width: 100%;
 }
 
-.bars-animation {
+/*.bars-animation {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -391,7 +391,7 @@ section{
     transform: translateY(0%);
   }
 }
-
+*/
 .about-me {
   display: flex;
   align-items: center;
