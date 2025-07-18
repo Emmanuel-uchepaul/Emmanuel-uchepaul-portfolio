@@ -272,9 +272,14 @@
           </div>
         </div>
       </div>
+  <!-- From this -->
+<!-- To this -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+<!-- Your custom script -->
+<script src="index.js" defer></script>
+
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="index.js"></script>
+<script src="https://unpkg.com/scrollreveal" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -289,12 +294,14 @@
   ],
   "jobTitle": "Full Stack Web Developer"
 }
-  
 </script>
 <script>
-document.getElementById("logo").addEventListener("click", () => {
-  window.location.reload();
-});
+const logo = document.getElementById("logo");
+if (logo) {
+  logo.addEventListener("click", () => {
+    window.location.reload();
+  });
+}
 </script>
 </body>
 </html>
