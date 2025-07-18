@@ -239,7 +239,7 @@ section{
 .btn {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #7cf03d;
+  background-color: #007BFF;
   border: 2px solid #7cf03d;
   border-radius: 40px;
   box-shadow: 0 0 10px cyan;
@@ -831,7 +831,7 @@ ul {
 }
 
 .footer-bottom-content p {
-  color: #999;
+  color: #222;
   font-size: 14px;
   font-weight: 300;
   color: #ffffff;
