@@ -18,7 +18,7 @@ body{
 }
 
 a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -55,27 +55,19 @@ header.sticky {
   }
 }
 
-  .logo {
-    display: flex;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    color: #007BFF;
-  }
 
-  .logo .icon {
+  .icon {
     width: 40px;
     height: 40px;
-    background-color: #007BFF;
+    background-color: transparent;
     margin-right: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    border: 2px solid #0ef ;
     position: relative;
   }
 
  
-  .logo .icon::before {
+  .icon::before {
     content: 'Ed';
     position: absolute;
     top: 50%;
@@ -172,16 +164,16 @@ header.sticky {
   display: inline-block;
   position: relative;
   color: transparent;
-  -webkit-text-stroke: 0.7px #7cf03d;
+  -webkit-text-stroke: 0.7px #0ef;
   animation: display-text 16s linear infinite;
   animation-delay: calc(-4s * var(--i));
 }
 @supports (-webkit-text-stroke: 1px #000) {
   .home-info h2 span{
      color: transparent;
-  -webkit-text-stroke: 0.7px #7cf03d;
+  -webkit-text-stroke: 0.7px #0ef;
 }
-
+}
 @keyframes display-text {
   25%, 100% {
     display: none;
@@ -192,12 +184,18 @@ header.sticky {
   content: attr(data-text);
   position: absolute;
   width: 0;
-  border-right: 2px solid #7cf03d;
-  color: #7cf03d;
+  border-right: 2px solid #0ef;
+  color: #0ef;
   overflow: hidden;
   white-space: nowrap;
   animation: fill-text 4s linear infinite;
 }
+span{
+  color: #0ef;
+}
+/*.home-info h2 span:nth-of-type(2){
+  margin-bottom: 2rem;
+}*/
 section{
   min-height: 100vh;
   padding: 10rem 9% 2rem;
@@ -211,47 +209,46 @@ section{
   }
 }
 .home-info p {
-  font-size: 1.5rem;
-  font-weight: 200;
-
+  font-size: 1.6rem;
 }
 
 .social-media a{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: .4rem .4rem;
+  width: 3rem;
+  height: 3rem;
   background: transparent;
-  border: .2rem solid #7cf03d ;
+  border:  .2px solid #0ef;
   border-radius: 50%;
-  font-size: 1.5rem;
-  color: white;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  
+  font-size: 2rem;
+  color: #0ef;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: .5s ease;
 }
 
 .social-media a:hover {
-  background-color:#7cf03d;
-  
+  background-color:#0ef;
+  color: #323946;
+  box-shadow: 0 0 10px #0ef;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #00bfff;
+  background-color: #0ef;
   border: none;
   border-radius: 40px;
-  /*box-shadow: 0 0 10px cyan;*/
+  box-shadow: 0 0 10px #0ef;
   font-size: 16px;
   font-weight: 500;
-  color: #1f242d;
-  transition: 0.5s;
+  color: #323946;
+  transition: .5s;
   margin-bottom: 2rem;
 }
 
 .btn:hover {
-  background-color: #009acd;
+  box-shadow: none;
 }
 
 .home-info .btn-sci .sci {
@@ -271,9 +268,7 @@ section{
 }
 
 .home-info .btn-sci .sci a:hover {
-  background-color: cyan ;
-  color: #fff;
-  box-shadow: 0 0 10px #7cf03d;
+  box-shadow: none;
 }
 
 .home-img .img-box {
@@ -324,7 +319,7 @@ section{
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+  background: conic-gradient(transparent, transparent, transparent, #0ef);
   transform: rotate(0deg);
   animation: rotate-border 10s linear infinite;
 }
@@ -348,7 +343,7 @@ section{
   overflow: hidden;
   display: flex;
   justify-content: center;
-  background-color: #1f242d;
+  background-color: /*#323946*/ rgb(223, 223, 21);
   border: 1px solid #1f242d;
 }
 
@@ -397,15 +392,15 @@ section{
   gap: 2rem;
   animation: show-content 1.5s ease forwards;
   animation-delay: 2.2s;
-  background-color: #2a2a3e;
+  background-color: #323946;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
- .heading {
+.heading {
     text-align: center;
     font-size: 4.5rem;
 }
-.about-info h1{
+.about-info h2{
   text-align: left;
   line-height: 1.2;
 }
@@ -416,7 +411,7 @@ section{
   font-size: 2.6rem;
 }
 .about-info p{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 2rem 0 3rem; ;
 }
 
@@ -424,72 +419,48 @@ section{
   width: 35vw;
 }
 
-.About{
+/*.about-me{
   margin-bottom: 3rem;
   font-size: 2rem;
   font-weight: 200;
   align-self: stretch;
 }
+*/
 
-
-.skills {
-  text-align: center;
-  padding: 60px 20px;
-  color: #fff;
+.skills h2{
+  margin-bottom: 5rem;
 }
 
-.section-title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  padding: 10px 20px;
-  border-radius: 8px;
-  margin-bottom: 40px;
-  display: inline-block;
-  color: #fff;
-}
-
-.section-title span {
-  color: #7cf03d;
-}
-
-.tittle {
-  font-size: 5rem;
-  text-align: center;
-  color: #fff;
-}
-
-.tittle span {
-  color: cyan;
-  font-style: italic;
-}
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  color: #fff;
   gap: 2rem;
 }
 
 .skills-container .skills-card {
-  background-color: #1c1e26;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 30rem;
+  background-color: #323946;
   padding: 3rem 2rem 4rem;
-  border-radius: 15px;
+  border-radius:2rem;
   text-align: center;
-  flex: 1 1 5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: .2rem solid #1f242d;
   transition: transform 0.3s ease;
 }
 
 .skills-card:hover {
   transform: translateY(-20px);
-  border: 0.2rem solid #2e3a4c;
-  box-shadow: 0 1rem 1rem rgba(119, 223, 255, 0.7);
+  border: 0.2rem solid #0ef;
+ 
 }
 
 .skills i {
   font-size: 16px;
-  color: cyan;
+  color: #0ef;
   margin-bottom: 20px;
   display: block;
 }
@@ -504,41 +475,25 @@ section{
 }
 
 .skills i:hover {
-  color: #7cf03d;
+  color: #0ef;
   transform: scale(1.2);
   transition: transform 0.3s;
 }
 
-.skills-card h3 {
-  color: #fff;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
+
 
 .skills p {
  font-size: 14px;
-  color: #ccc;
+  color: #fff;
   margin-bottom: 50px;
 }
   html {
   font-size: 16px;
 }
 
-.skills-btn {
-  background-color: #2ecc71;
-  color: #1f242d;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 14px;
-  border-radius: 30px;
-  border: 2px solid cyan;
-  font-weight: bold;
-  display: inline-block;
-  transition: background-color 0.3s;
-}
 
 .skills-btn:hover {
-  background-color: #27ae60;
+ box-shadow: none;
  
 }
 
@@ -999,4 +954,3 @@ overflow-x: hidden;
     overflow-x: hidden;
   }
 }
-
