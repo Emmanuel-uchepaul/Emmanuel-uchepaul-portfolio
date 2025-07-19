@@ -419,13 +419,7 @@ section{
   width: 35vw;
 }
 
-/*.about-me{
-  margin-bottom: 3rem;
-  font-size: 2rem;
-  font-weight: 200;
-  align-self: stretch;
-}
-*/
+
 
 .skills h2{
   margin-bottom: 5rem;
@@ -433,7 +427,8 @@ section{
 
 
 .skills-container {
-  display: flex;
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -441,9 +436,6 @@ section{
 }
 
 .skills-container .skills-card {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 30rem;
   background-color: #323946;
   padding: 3rem 2rem 4rem;
   border-radius:2rem;
@@ -492,10 +484,7 @@ section{
 }
 
 
-.skills-btn:hover {
- box-shadow: none;
- 
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -516,7 +505,6 @@ html {
   text-align: center;
   flex-direction: column;
   height: 350px;
-  box-shadow: 0 0 1rem rgba(119, 223, 255, 0.7);
   align-items: center;
   justify-content: center;
   position: relative;
@@ -529,7 +517,7 @@ html {
   height: 100%;
   width: 100%;
   color: #fff;
-  background: linear-gradient(#7cf03d, cyan);
+  background-image: linear-gradient(0deg, #D9FF43, #003D2B, transparent);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -540,14 +528,14 @@ html {
   transition: 0.5s ease;
 }
 
-.project-info h3 {
-  color: #7cf03d;
-  font-size: 3rem;
+.project-info h2 {
+  color: #0ef;
+  font-size: 20px;
 }
 
 .project-info p {
-  color: #ccc;
-  font-size: 1.6rem;
+  color: #fff;
+  font-size: 16px;
   margin: 0.3rem 0 1rem;
 }
 
@@ -555,7 +543,7 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #7cf03d;
+  background-color: #0ef;
   width: 5rem;
   height: 5rem;
   color: #fff;
@@ -708,7 +696,7 @@ ul {
   list-style: none;
 }
 
-.footer-col h4 {
+.footer-col h4, h5 {
   font-size: 19px;
   color: #ffffff;
   text-transform: capitalize;
@@ -772,7 +760,7 @@ ul {
 }
 
 .footer-bottom {
-  background-color: #ccc;
+  background-color: #1f242d;
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -784,17 +772,10 @@ ul {
 }
 
 .footer-bottom-content p {
-  color: #222;
-  font-size: 14px;
+  
+  font-size: 15px;
   font-weight: 300;
   color: #ffffff;
-}
-
-.footer-bottom-content a {
-  color: #24262b;
-  font-size: 14px;
-  font-weight: 300;
-  text-decoration: none;
 }
 
 .footer-bottom-content a:hover {
