@@ -16,32 +16,91 @@
       color: #222;
     }
 
-    header {
-      background-color: #1f242d;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 2rem;
-    }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: #1f242d;
+  padding: 2rem 9%;
+  animation-delay: 1.2s;
+  animation: show-content 1.5s ease forwards;
+}
 
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: cyan;
-    }
+header.sticky {
+  border-bottom: 0.1rem solid cyan;
+}
 
-    .nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-size: 1rem;
-    }
+@keyframes show-content {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
 
-    .nav a:hover,
-    .nav a.active {
-      color: cyan;
-    }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #0ef ;
+    position: relative;
+  }
+
+ 
+  icon::before {
+    content: 'Ed';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+nav a{
+  font-size: 1.7rem;
+  color: white;
+  margin-left: 2rem;
+}
+
+nav a:hover{
+  color: cyan;
+}
+
+nav a {
+  animation: slid-top 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes slid-top {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+nav{
+  margin-right: 2rem;
+}
+
 
     .container {
       max-width: 1000px;
@@ -140,27 +199,29 @@
 
     /* Mobile Responsive */
     @media (max-width: 768px) {
-     header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem 1.5rem;
-      }
+      #menu-icon{
+    display: block;
+   }
 
-      .logo {
-        font-size: 22px;
-        margin-bottom: 1rem;
-      }
-
-      .nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .nav a {
-        margin: 0.5rem 0;
-        font-size: 1.1rem;
-      }
+   .nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: #1c1e26;
+    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+   }
+   .nav.active{
+    display: block;
+   }
+   .nav a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+   }
 
       h1 {
         font-size: 1.5rem;
@@ -179,12 +240,18 @@
 <body>
 
 <header>
-  <div class="logo">EMMYloRd</div>
-  <i class="bx bx-menu" id="menu-icon"></i>
-  <nav class="nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="blog.html">Blog</a>
-  </nav>
+  <div class="logo">EMMYloRd
+  <span class="icon"></span>
+  </div>
+  
+ 
+<nav>
+  <ul>
+    <a href="#home" class="active">Home</a>
+  <a href="blog.html">Blog</a>
+  </ul>
+ <i class="bx bx-menu" id="menu-icon"></i>
+</nav>
 </header>
 
 <main class="container">
@@ -226,16 +293,16 @@
   <p>&copy; 2025 Emmanuel Uche Paul. All rights reserved.</p>
 </footer>
   <script >
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.nav');
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.nav');
 
-menuIcon.onclick = () => {
-menuIcon.classList.toggle('bx-x');
-navbar.classList.toggle('active');
-};
-  </script>
+    menuIcon.onclick = () => {
+      menuIcon . classList.toggle('bx-x');
+      navbar.classList.toggle('active');
+    }
+      </script>
   
-  <!-- Structured Data -->
+ 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -249,7 +316,7 @@ navbar.classList.toggle('active');
     "image": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/chini%20design-(1).webp",
     "publisher": {
       "@type": "Organization",
-      "name": "EmmyLord Blog"
+      "name": "Chini Design"
     },
     "mainEntityOfPage": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/chini.html",
     "description": "Discover why Chinyere Mbadiwe of Chini Design is considered Nigeria’s best graphic designer—creativity, excellence, and visual impact."
