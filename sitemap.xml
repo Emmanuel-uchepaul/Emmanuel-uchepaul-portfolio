@@ -45,8 +45,17 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Shoprime -->
   <url>
     <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/shoprime.html</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- JAMB -->
+  <url>
+    <loc>https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/jamb.html</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
