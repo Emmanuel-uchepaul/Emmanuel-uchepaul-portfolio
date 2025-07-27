@@ -467,6 +467,7 @@ header h1 {
   <!-- ============== SCHEMAS (EEAT + RICH RESULTS) ============== -->
   <!-- WebSite -->
 <!-- Website -->
+<!-- Website -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -490,6 +491,13 @@ header h1 {
   "@id": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/#organization",
   "name": "Emmylord",
   "url": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio",
+  "logo": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/assets/logo.png",
+  "sameAs": [
+    "https://twitter.com/yourbrand",
+    "https://www.facebook.com/yourbrand",
+    "https://www.linkedin.com/in/yourprofile",
+    "https://github.com/yourgh"
+  ]
 }
 </script>
 
@@ -515,7 +523,7 @@ header h1 {
       "@type": "ListItem",
       "position": 3,
       "name": "JAMB 2025 – Complete Guide",
-      "item": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/jamb.html"
+      "item": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/jamb-2025-complete-guide.html"
     }
   ]
 }
@@ -526,10 +534,13 @@ header h1 {
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "mainEntityOfPage": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/jamb.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/jamb.html"
+  },
   "headline": "How to Check JAMB PIN (ePIN) + Complete JAMB 2025 Guide",
   "description": "How to check your JAMB ePIN/PIN step-by-step plus full JAMB 2025 guide: registration, cut-off marks, syllabus, result checking, CAPS & FAQs.",
-  "image": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/jamb.jpeg",
+  "image": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/assets/jamb-2025-cover.jpg",
   "datePublished": "2025-07-25",
   "dateModified": "2025-07-25",
   "author": {
@@ -537,7 +548,12 @@ header h1 {
     "name": "Emmanuel Paul"
   },
   "publisher": {
-    "@id": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/#organization"
+    "@type": "Organization",
+    "name": "Emmylord",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/assets/logo.png"
+    }
   }
 }
 </script>
@@ -550,13 +566,37 @@ header h1 {
   "name": "How to Check Your JAMB PIN (ePIN) in 2025",
   "description": "A step-by-step guide to retrieve, verify, or recover your JAMB ePIN for 2025 UTME/DE registration.",
   "totalTime": "PT5M",
-  "estimatedCost": { "@type": "MonetaryAmount", "currency": "NGN", "value": "0" },
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "NGN",
+    "value": "0"
+  },
   "step": [
-    { "@type": "HowToStep", "name": "Check SMS from 55019/66019", "text": "Search your phone messages for ePIN or profile code sent by 55019 or 66019." },
-    { "@type": "HowToStep", "name": "Check Email Inbox", "text": "If you bought online, check your email receipt from the payment platform." },
-    { "@type": "HowToStep", "name": "Verify Payment Receipt", "text": "Bank/POS receipts usually contain your JAMB ePIN." },
-    { "@type": "HowToStep", "name": "Login to eFacility", "text": "Go to efacility.jamb.gov.ng and review your registration/payment history." },
-    { "@type": "HowToStep", "name": "Visit CBT Centre", "text": "If you still can't retrieve it, an accredited centre can help you recover it." }
+    {
+      "@type": "HowToStep",
+      "name": "Check SMS from 55019/66019",
+      "text": "Search your phone messages for ePIN or profile code sent by 55019 or 66019."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Check Email Inbox",
+      "text": "If you bought online, check your email receipt from the payment platform."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Verify Payment Receipt",
+      "text": "Bank/POS receipts usually contain your JAMB ePIN."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Login to eFacility",
+      "text": "Go to efacility.jamb.gov.ng and review your registration/payment history."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Visit CBT Centre",
+      "text": "If you still can't retrieve it, an accredited centre can help you recover it."
+    }
   ]
 }
 </script>
@@ -610,6 +650,7 @@ header h1 {
   ]
 }
 </script>
+
 
 </head>
 <body>
