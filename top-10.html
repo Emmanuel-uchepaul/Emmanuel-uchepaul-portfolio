@@ -23,7 +23,6 @@
   <meta name="twitter:image" content="https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/blog/top-10.png" >
 
 
-  <!-- Custom Styles -->
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -326,7 +325,7 @@
     </div>
     <!-- Navigation -->
     <nav class="nav">
-      <a href="#home" class="active">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="blog.html">Blog</a>
     </nav>
 
@@ -337,8 +336,7 @@
  
 
   <main>
-    
-     <img src="top-10.webp" alt="Top  best Graphis  Designers in Nigeria" class="banner">
+     <img src="top-10.png" alt="Top  best Graphis  Designers in Nigeria" class="banner">
     <h1>Top 10 Best Graphics Designers in Nigeria </h1>
     <p>Graphic design in Nigeria is booming — thanks to innovative talents pushing creative boundaries. Whether it's logo design, branding, UI/UX, or social media graphics, these top designers are shaping the identity of brands across Africa.</p>
 
@@ -397,13 +395,20 @@
     <p>© 2025 Emmanuel Uche Paul. All rights reserved.</p>
   </footer>
 <script >
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.nav');
+ const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
 
-menuIcon.onclick = () => {
-menuIcon.classList.toggle('bx-x');
-navbar.classList.toggle('active');
-};
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+    const tocToggle = document.getElementById('tocToggle');
+    const tocList = document.getElementById('tocList');
+    if(tocToggle && tocList){
+      tocToggle.addEventListener('click', ()=>{
+        const isOpen = tocList.classList.toggle('open');
+        tocToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
 </script>
 </body>
 </html>
