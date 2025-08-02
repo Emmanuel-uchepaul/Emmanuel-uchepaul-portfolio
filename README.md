@@ -26,5 +26,6 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 If you'd like to get in touch, please use the contact form on the website or connect with me via WhatsApp, GitHub, or other social platforms.
 
 
-Thank you for visiting my portfolio! 
+Check out  my portfolio @ https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/
+
 
