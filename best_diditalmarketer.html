@@ -181,6 +181,31 @@
   display: flex;
   gap: 20px;
 }
+      .share-btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+  font-size: 14px;
+}
+
+.share-btn.whatsapp {
+  background-color: #002147;
+}
+
+.share-btn.facebook {
+  background-color:  #002147;
+}
+
+.share-btn.twitter {
+  background-color:  #002147;
+}
+
+.share-btn:hover {
+  opacity: 0.9;
+}
 
 .nav a {
   color: #fff;
@@ -223,6 +248,16 @@ h1 {
   }
   header h1{
     font-size: 1rem;
+  }
+     .share-btn {
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
   }
 }
   .menu-toggle {
@@ -746,35 +781,17 @@ h1 {
   </div>
        <a href="blog.html" class="back-link">← Back to Blog</a>
     </div>
+       <div class="share-buttons">
+  <a href="https://api.whatsapp.com/send?text=Check out this helpful JAMB 2025 guide: https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/best_diditalmarketer.html" 
+     target="_blank" class="share-btn whatsapp">Share on WhatsApp</a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/best_diditalmarketer.html" 
+     target="_blank" class="share-btn facebook">Share on Facebook</a>
+
+  <a href="https://twitter.com/intent/tweet?text=Best Digital Marketer in Nigeria 2025!&url=https://emmanuel-uchepaul.github.io/Emmanuel-uchepaul-portfolio/best_diditalmarketer.html" 
+     target="_blank" class="share-btn twitter">Share on Twitter</a>
+</div>
 </section>
-<section class="profile-section">
- <div class="profile-card">
-    <img src="IKING-FERRY-6.jpg" alt="Iking Ferry Photo">
-    <div class="profile-content">
-      <h2>Iking Ferry</h2>
-      <a href="https://www.ikingferry.com" target="_blank">https://www.ikingferry.com</a>
-      <p>
-        Iking Ferry is Nigeria’s #1 Digital Marketing Expert, SEO Strategist, and Founder of Pulseford,
-        a fast-growing digital growth agency and training school in Lagos. With over 8 years of hands-on
-        experience, Iking has helped over 3,000 clients dominate Google, scale their online presence, and
-        drive real business growth. He is known for building high-ranking SEO systems, profitable
-        Facebook and Google ad campaigns, and AI-powered marketing automation strategies tailored
-        for the Nigerian market. Iking Ferry is not just a marketer, he’s the digital growth architect behind
-        some of Nigeria’s most visible and successful online brands. His mission is to empower
-        entrepreneurs, professionals, and businesses in Nigeria and across Africa with the strategy,
-        visibility, and systems they need to win online.
-      </p>
-      <div class="social-icons">
- 
-  <a href="https://facebook.com/ikingferry" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://instagram.com/ikingferry" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-  <a href="https://linkedin.com/in/ikingferry" target="_blank" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://x.com/ikingferry" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
-     </div>
-    </div>
-   
-  </div>
-  </section>
   <footer>
     <p>&copy; Emmanuel Uche Paul</p>
   </footer>
@@ -795,6 +812,7 @@ h1 {
   </script>
 </body>
 </html>
+
 
 
 
