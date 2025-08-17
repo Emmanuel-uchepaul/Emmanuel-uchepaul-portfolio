@@ -148,35 +148,92 @@
 
  /* ======== MEDIA QUERIES ======== */
 
-  header {
-      background-color: #1f242d;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+ .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+}
 
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: cyan;
-    }
+  .icon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #0ef ;
+    position: relative;
+  }
 
-    .nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-size: 1rem;
-    }
+ 
+  .icon::before {
+    content: 'Ed';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+.nav {
+  display: flex;
+  gap: 20px;
+}
 
-    .nav a.active,
-    .nav a:hover {
-      color: cyan;
-    }
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #ff0000;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.breadcrumbs {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0;
+}
+  @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: #1e3c72;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  .nav.active {
+    display: flex;
+  }
+  header h1{
+    font-size: 1rem;
+  }
+}
+  .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
 
 @media (max-width: 768px) {
   body {
@@ -285,14 +342,29 @@
 
 </head>
 <body>
-<header>
-  <div class="logo">EMMYloRd</div>
-  <i class="bx bx-menu" id="menu-icon"></i>
-  <nav class="nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="blog.html">Blog</a>
-  </nav>
-</header>
+  <header >
+   
+    <div class="header-top">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+         <div class="icon" id="logoicon"></div>
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+
+     <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+
+  <!-- Title and Breadcrumbs -->
+  <h1>
+    Best &amp;, Cheapest, &amp; Fast SMM Panel in Nigeria
+  </h1>
+  </header>
     <div class="container">
         <div style="flex: 1; min-width: 250px;">
     <img src="IKING-FERRY-(1).webp" alt="best digital marketer in Nigeria" style="width: 100%; border-radius: 8px;" />
@@ -713,15 +785,16 @@
         parent.classList.toggle('active-toggle');
       });
     });
-    let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.nav');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
 
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
-};
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+
   </script>
 </body>
 </html>
+
 
 
